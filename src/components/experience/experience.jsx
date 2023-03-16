@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 import Planet from "../planet/planet"
+import Satellite from "../satellite/satellite"
 
 export default function Experience() {
 	return (
@@ -25,13 +26,14 @@ export default function Experience() {
 			/>
 			<directionalLight
 				castShadow
-				position={[3, 1, 0.5]}
+				position={[0, 0, 4]}
 				intensity={1.5}
 				shadow-normalBias={0.09}
 				color={"#e8dfdd"}
 			/>
 			<ambientLight intensity={0.2} />
 			<Planet />
+			<Satellite />
 		</Canvas>
 	)
 }
