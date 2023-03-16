@@ -1,5 +1,7 @@
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
+import Planet from "../planet/planet"
+
 export default function Experience() {
 	return (
 		<Canvas
@@ -8,14 +10,14 @@ export default function Experience() {
 				fov: 45,
 				near: 0.1,
 				far: 200,
-				position: [-1, -1, 6],
+				position: [0, 0, 3],
 			}}
 		>
 			<OrbitControls
 				enableDamping={true}
 				enablePan={false}
-				minPolarAngle={Math.PI / 2.06}
-				maxPolarAngle={0}
+				maxPolarAngle={Math.PI / 2.06}
+				minPolarAngle={0}
 				dampingFactor={0.05}
 				rotateSpeed={0.3}
 				maxDistance={8.0}
@@ -29,10 +31,7 @@ export default function Experience() {
 				color={"#e8dfdd"}
 			/>
 			<ambientLight intensity={0.2} />
-			<mesh>
-				<boxGeometry />
-				<meshBasicMaterial color={"red"} />
-			</mesh>
+			<Planet />
 		</Canvas>
 	)
 }
