@@ -1,5 +1,22 @@
 body {
 	background-color: var(--color-dark);
+	font-family: "Vercetti";
+	font-size: 16px;
+}
+
+h1 {
+	position: absolute;
+	left: 50%;
+	top: 15vmin;
+	transform: translateX(-50%);
+	font-size: 3rem;
+	line-height: 125%;
+	text-align: center;
+	color: var(--color-main);
+
+	span {
+		font-size: 1.8rem;
+	}
 }
 
 canvas {
