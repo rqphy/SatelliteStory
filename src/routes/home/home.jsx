@@ -1,3 +1,9 @@
+import Experience from "../../components/experience/experience"
+
 export default function Home() {
-    return <div>Welcome Home</div>
+	return (
+		<div>
+			<Experience />
+		</div>
+	)
 }
