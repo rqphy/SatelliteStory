@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber"
+import { ScrollControls, Scroll, useScroll } from "@react-three/drei"
 import Planet from "../planet/planet"
 import Satellite from "../satellite/satellite"
 
@@ -15,11 +16,13 @@ export default function Experience() {
 		>
 			<directionalLight
 				position={[3, 2, 4]}
-				intensity={1.5}
+				intensity={1}
 				color={"#e8dfdd"}
 			/>
 			<ambientLight intensity={0.2} />
-			<Planet />
+			<ScrollControls pages={5} damping={0.3}>
+				<Planet />
+			</ScrollControls>
 			<Satellite />
 		</Canvas>
 	)
