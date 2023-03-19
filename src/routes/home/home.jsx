@@ -1,17 +1,11 @@
 import Experience from "../../components/experience/experience"
-import Content from "../../components/content/content"
 import data from "../../data/content.json"
+import Popup from "../../components/popup/popup"
 
 export default function Home() {
 	return (
 		<div>
-			<Content>
-				<h1>
-					<span>Welcome to,</span>
-					<br />
-					{data.title}
-				</h1>
-			</Content>
+			<Popup />
 			<Experience />
 		</div>
 	)
