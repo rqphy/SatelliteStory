@@ -1,8 +1,27 @@
 import { useGLTF, useScroll } from "@react-three/drei"
 import { useFrame } from "@react-three/fiber"
 import { useRef } from "react"
+import useMessage from "../../stores/useMessage"
 
 export default function Planet() {
+	const setMessageId = useMessage((state) => state.setMessageId)
+	const messagesLength = useMessage((state) => state.messagesLength)
+
+	const updateMessageId = (scrollOffset) => {
+		let tempId = -1
+
+		for (let i = 0; i < messagesLength; i++) {
+			if (
+				scrollOffset >= 0.08 + i / messagesLength &&
+				scrollOffset < 0.25 + i / messagesLength
+			) {
+				tempId = i
+				break
+			}
+		}
+		setMessageId(tempId)
+	}
+
 	const planetRef = useRef()
 	const planet = useGLTF(
 		"./planet_earth_alt-drag_to_change_lighting/scene.gltf"
@@ -10,7 +29,12 @@ export default function Planet() {
 	const data = useScroll()
 
 	useFrame(() => {
-		planetRef.current.rotation.x = data.offset * Math.PI
+		const currentScrollOffset = data.offset
+		// Update planet rotation
+		planetRef.current.rotation.x = currentScrollOffset * Math.PI
+
+		// update message
+		updateMessageId(currentScrollOffset)
 	})
 
 	return (
