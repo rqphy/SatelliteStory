@@ -14,16 +14,22 @@ canvas {
 	left: 50%;
 	top: 15vmin;
 	transform: translateX(-50%);
-	font-size: 2rem;
+	font-size: 3vmin;
 	line-height: 150%;
 	text-align: center;
 	color: var(--color-main);
+	z-index: 20;
+
+	a {
+		color: var(--color-main);
+		text-decoration: underline;
+	}
 
 	span {
-		font-size: 1.8rem;
+		font-size: 3vmin;
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 5vmin;
 	}
 }
