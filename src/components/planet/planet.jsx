@@ -12,8 +12,8 @@ export default function Planet() {
 
 		for (let i = 0; i < messagesLength; i++) {
 			if (
-				scrollOffset >= 0.08 + i / messagesLength &&
-				scrollOffset < 0.25 + i / messagesLength
+				scrollOffset >= 0.02 + i / messagesLength &&
+				scrollOffset < 0.12 + i / messagesLength
 			) {
 				tempId = i
 				break

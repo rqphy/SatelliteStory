@@ -20,7 +20,7 @@ export default function Experience() {
 				color={"#e8dfdd"}
 			/>
 			<ambientLight intensity={0.2} />
-			<ScrollControls pages={5} damping={0.3}>
+			<ScrollControls pages={16} damping={0.3}>
 				<Planet />
 			</ScrollControls>
 			<Satellite />
