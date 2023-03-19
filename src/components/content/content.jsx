@@ -14,14 +14,17 @@ const unmoutAnimation = `
 export default function Content({ children }) {
 	const [isMounted, setIsMounted] = useState(false)
 	return (
-		<Animated.div
-			className="content"
-			show={isMounted}
-			mountAnim={mountAnimation}
-			unmountAnim={unmoutAnimation}
-			time={0.6}
-		>
-			{children}
-		</Animated.div>
+		<>
+			<div onClick={() => setIsMounted(!isMounted)}>lol</div>
+			<Animated.div
+				className="content"
+				show={isMounted}
+				mountAnim={mountAnimation}
+				unmountAnim={unmoutAnimation}
+				time={0.6}
+			>
+				{children}
+			</Animated.div>
+		</>
 	)
 }
