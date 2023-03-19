@@ -20,16 +20,21 @@ canvas {
 	color: var(--color-main);
 	z-index: 20;
 
+	@include medium {
+		width: 80%;
+		font-size: 4.5vmin;
+	}
+
 	a {
 		color: var(--color-main);
 		text-decoration: underline;
 	}
 
 	span {
-		font-size: 3vmin;
+		font-size: 0.8em;
 	}
 
 	h1 {
-		font-size: 5vmin;
+		font-size: 1.5em;
 	}
 }
