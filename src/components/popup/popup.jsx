@@ -1,5 +1,5 @@
 import useMessage from "../../stores/useMessage"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function Popup() {
 	const messageId = useMessage((state) => state.messageId)
