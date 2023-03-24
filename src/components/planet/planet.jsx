@@ -24,7 +24,8 @@ export default function Planet() {
 
 	const planetRef = useRef()
 	const planet = useGLTF(
-		"./planet_earth_alt-drag_to_change_lighting/scene.gltf"
+		"./earth/scene.gltf"
+		// "./planet_earth_alt-drag_to_change_lighting/scene.gltf"
 	)
 	const data = useScroll()
 
@@ -42,7 +43,7 @@ export default function Planet() {
 			ref={planetRef}
 			object={planet.scene}
 			scale={2.5}
-			rotation={[0, 0, Math.PI * 0.5]}
+			rotation={[0, Math.PI * 0.1, Math.PI * 0.9]}
 			position={[0, -3, 0]}
 		/>
 	)
