@@ -43,7 +43,7 @@ export default function Planet() {
 			ref={planetRef}
 			object={planet.scene}
 			scale={2.5}
-			rotation={[0, Math.PI * 0.1, Math.PI * 0.9]}
+			rotation={[0, Math.PI * 0.1, Math.PI * 1.8]}
 			position={[0, -3, 0]}
 		/>
 	)
