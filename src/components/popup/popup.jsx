@@ -1,5 +1,6 @@
 import useMessage from "../../stores/useMessage"
 import { useEffect, useState } from "react"
+import { useTransition, animated } from "react-spring"
 
 export default function Popup() {
 	const messageId = useMessage((state) => state.messageId)
@@ -48,5 +49,17 @@ export default function Popup() {
 		setMessagesLength(messages.length)
 	}, [])
 
-	return <div className="popup">{messages[messageId]}</div>
+	const transitions = useTransition(messageId, {
+		from: { opacity: 0 },
+		enter: { opacity: 1 },
+		leave: { opacity: 0 },
+	})
+
+	return transitions((style, index) => {
+		return (
+			<animated.div className="popup" style={style}>
+				{messages[index]}
+			</animated.div>
+		)
+	})
 }
