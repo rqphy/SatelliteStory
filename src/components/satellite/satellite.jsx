@@ -8,7 +8,7 @@ export default function Satellite() {
 			object={satellite.scene}
 			scale={0.00002}
 			rotation={[Math.PI * 0.5, 0, 0]}
-			position={[0, 0, 2]}
+			position={[0, -0.05, 2]}
 		/>
 	)
 }
