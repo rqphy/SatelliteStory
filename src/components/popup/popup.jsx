@@ -12,25 +12,24 @@ export default function Popup() {
 			<h1>Satellite Story</h1>
 		</article>,
 		<article>
-			Sputnik is the first human made satellite. It was launched October
-			4, 1957 by the Soviet Union.
+			First artificial satellite of Earth, launched by the Soviet Union in
+			1957.
 		</article>,
 		<article>
-			It only spent 22 days in orbit but it was enough to motivate NASA to
-			join the space race.
+			Designed by Sergei Korolev, Sputnik 1 was a small spherical
+			satellite equipped with several instruments.
 		</article>,
 		<article>
-			Since then, countries have launched over 5000 satellites around
-			earth.
+			Its launch triggered the space race between the United States and
+			the Soviet Union. Sputnik 1 enabled important advancements in
+			understanding space.
 		</article>,
 		<article>
-			They are able to stay in orbit by bouncing two forces: Centrifugal
-			Force and Gravity.
+			The space race led to notable space achievements such as the first
+			human spaceflight by Yuri Gagarin in 1961.
 		</article>,
 		<article>
-			Satellites have multiple purposes. They are communication satellite
-			that help with radio, tv and telephone signals. They are GPS
-			satellite that help us determine where we are on the Earth.
+			Sputnik 1 is considered a significant event of the Cold War.
 		</article>,
 		<article>
 			Discover more projects on my{" "}
