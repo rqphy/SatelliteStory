@@ -23,6 +23,7 @@ canvas {
 	text-align: center;
 	color: var(--color-main);
 	z-index: 20;
+	pointer-events: none;
 
 	@include medium {
 		width: 80%;
