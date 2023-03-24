@@ -16,7 +16,9 @@ canvas {
 .popup {
 	position: absolute;
 	left: 50%;
-	top: 15vmin;
+	top: 10%;
+	width: 64%;
+	max-width: 660px;
 	transform: translateX(-50%);
 	font-size: 3vmin;
 	line-height: 150%;

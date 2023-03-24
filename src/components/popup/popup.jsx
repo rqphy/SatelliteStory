@@ -12,11 +12,12 @@ export default function Popup() {
 			<h1>Satellite Story</h1>
 		</article>,
 		<article>
-			First artificial satellite of Earth, launched by the Soviet Union in
-			1957.
+			First artificial satellite of Earth,
+			<br />
+			launched by the Soviet Union in 1957.
 		</article>,
 		<article>
-			Designed by Sergei Korolev, Sputnik 1 was a small spherical
+			Designed by Sergei Korolev, Sputnik&nbsp;1 was a small spherical
 			satellite equipped with several instruments.
 		</article>,
 		<article>
