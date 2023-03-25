@@ -7,10 +7,7 @@ export default function Popup() {
 	const setMessagesLength = useMessage((state) => state.setMessagesLength)
 
 	const messages = [
-		<article>
-			<span>Welcome to,</span>
-			<h1>Satellite Story</h1>
-		</article>,
+		<article>Have you ever heard the name Sputnik?</article>,
 		<article>
 			First artificial satellite of Earth,
 			<br />
