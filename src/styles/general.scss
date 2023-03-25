@@ -13,22 +13,6 @@ canvas {
 	}
 }
 
-.loader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	background-color: var(--color-dark);
-	z-index: 20;
-	transition: opacity 1s ease-in;
-
-	&_started {
-		opacity: 0;
-		pointer-events: none;
-	}
-}
-
 .popup {
 	position: absolute;
 	left: 50%;
