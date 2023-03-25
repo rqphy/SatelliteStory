@@ -29,19 +29,19 @@
 		text-align: center;
 
 		p {
-			font-size: 3vmin;
+			font-size: 3vh;
 		}
 
 		h1 {
-			margin-top: 2vmin;
-			font-size: 4.9vmin;
+			margin-top: 2vh;
+			font-size: 4.9vh;
 		}
 	}
 
 	&__orbit {
 		position: relative;
-		height: 5vmin;
-		width: 5vmin;
+		height: 5vh;
+		width: 5vh;
 		background-color: var(--color-light);
 		border-radius: 50%;
 		animation: orbit_rotation 3s infinite linear;
@@ -52,8 +52,8 @@
 			top: 0;
 			left: -50%;
 			display: block;
-			height: 1vmin;
-			width: 1vmin;
+			height: 1vh;
+			width: 1vh;
 			background-color: var(--color-main);
 			border-radius: 50%;
 		}
@@ -61,8 +61,9 @@
 
 	&__cta {
 		position: relative;
-		height: 7vmin;
-		width: 36vmin;
+		height: 7vh;
+		width: 36vh;
+		max-width: 80%;
 		border: none;
 		// border-radius: 2rem;
 		background-color: var(--color-light);
@@ -90,6 +91,7 @@
 		p {
 			position: relative;
 			transition: transform 0.3s ease-out;
+			font-size: 2vh;
 			z-index: 2;
 		}
 	}
