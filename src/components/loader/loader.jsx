@@ -10,7 +10,10 @@ export default function Loader({ hasStarted, onStart }) {
 				<p>Welcome to,</p>
 				<h1>A Satellite Story</h1>
 			</div>
-			<div className="loader__orbit"></div>
+			<figure className="loader__orbit">
+				<img src="/earth.png" alt="earth" />
+				<div className="loader__satellite"></div>
+			</figure>
 			<button
 				className="loader__cta"
 				disabled={progress < 100}

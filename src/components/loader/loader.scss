@@ -38,14 +38,21 @@
 		}
 	}
 
-	&__orbit {
+	&__orbit,
+	&__satellite {
 		position: relative;
 		height: 5vh;
 		width: 5vh;
-		background-color: var(--color-light);
 		border-radius: 50%;
-		animation: orbit_rotation 3s infinite linear;
+	}
 
+	&__orbit {
+		animation: orbit_rotation 10s infinite linear reverse;
+	}
+
+	&__satellite {
+		position: absolute;
+		top: 0;
 		&::after {
 			content: "";
 			position: absolute;
@@ -54,9 +61,10 @@
 			display: block;
 			height: 1vh;
 			width: 1vh;
-			background-color: var(--color-main);
+			background-color: var(--color-light);
 			border-radius: 50%;
 		}
+		animation: orbit_rotation 3s infinite linear;
 	}
 
 	&__cta {
