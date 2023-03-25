@@ -11,8 +11,16 @@ export default function Loader({ hasStarted, onStart }) {
 				<h1>A Satellite Story</h1>
 			</div>
 			<div className="loader__orbit"></div>
-			<button disabled={progress < 100} onClick={onStart}>
-				Enter the experience {progress}
+			<button
+				className="loader__cta"
+				disabled={progress < 100}
+				onClick={onStart}
+			>
+				<p>{progress < 100 ? "Loading..." : "Enter the experience"}</p>
+				<div
+					className="loader__progress"
+					style={{ left: `${progress - 100}%` }}
+				></div>
 			</button>
 		</section>
 	)
