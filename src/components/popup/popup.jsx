@@ -8,7 +8,7 @@ export default function Popup() {
 
 	const messages = [
 		<article>
-			Today, I'll give you 6 facts about the space achievement that
+			Today, I'll give you 5 facts about the space achievement that
 			changed everything.
 		</article>,
 		<article>
