@@ -25,3 +25,9 @@ The rendering works fine and I can see the message that I want when I want (cf t
 I’ve done custom loaders in other projects, but this time I wanted to make one with a call to action and a progress bar. This wasn’t necessary, but I’ve no idea how to do that so I’ll try. As usual, I’ll use the Suspense component from react, however I’ll set the fallback to null.
 
 I’ve created a custom loader with a simple animation. It’s time to add the logical part with the progress bar. Thanks to drei (again), I’ve access to a useProgress hook. Unfortunately, I had issues while implementing it. In some case it was stuck at 0 so the call to action won’t update and the user couldn’t enter the experience. I don’t have any explanation for this. To patch the bug, I removed the conditional rendering on the Experience component. It works fine, but I ain’t sure it’s a good thing for performances.
+
+## Licences
+
+[Satellite Model](https://github.com/rqphy/SatelliteStory/blob/main/public/sputnik/license.txt)
+
+[Earth Model](https://github.com/rqphy/SatelliteStory/blob/main/public/earth/license.txt)
