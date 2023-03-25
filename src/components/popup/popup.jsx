@@ -7,7 +7,10 @@ export default function Popup() {
 	const setMessagesLength = useMessage((state) => state.setMessagesLength)
 
 	const messages = [
-		<article>Have you ever heard the name Sputnik?</article>,
+		<article>
+			Today, I'll give you 6 facts about the space achievement that
+			changed everything.
+		</article>,
 		<article>
 			First artificial satellite of Earth,
 			<br />
