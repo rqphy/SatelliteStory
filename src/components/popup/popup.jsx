@@ -10,6 +10,7 @@ export default function Popup() {
 		<article>
 			Today, I'll give you 5 facts about the space achievement that
 			changed everything.
+			<p>(Scroll to explore)</p>
 		</article>,
 		<article>
 			First artificial satellite of Earth,

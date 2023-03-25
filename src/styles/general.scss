@@ -31,6 +31,10 @@ canvas {
 		pointer-events: initial;
 	}
 
+	p {
+		font-size: 2.2vmin;
+	}
+
 	@include medium {
 		width: 80%;
 		font-size: 4.5vmin;
