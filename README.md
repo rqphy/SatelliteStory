@@ -10,6 +10,8 @@ Now that I’ve set the base of the project, I need some ideas. Let’s try to c
 
 [Live](https://satellite.raphael-ferreira.com)
 
+![Home Satellite Story](https://juq1maqrjs.ufs.sh/f/r1m4dnkvsK4QopvBOHkJYt0MjvGVNx71POTzu2f9aDki6FEs)
+
 ## Features
 
 ### Scroll animation
